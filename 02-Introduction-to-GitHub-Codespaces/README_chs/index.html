@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>3. GitHub Codespaces简介 - Mastering-GitHub-Copilot-for-Paired-Programming</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "3. GitHub Codespaces\u7b80\u4ecb";
+        var mkdocs_page_input_path = "02-Introduction-to-GitHub-Codespaces/README_chs.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mastering-GitHub-Copilot-for-Paired-Programming
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../README_chs/">1. 掌握 GitHub Copilot 用于 AI 配对编程</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../01-Introduction-to-GitHub/README_chs/">2. GitHub简介</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">3. GitHub Codespaces简介</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">如何开始本课程</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../03-Introduction-to-GitHub-Copilot/README_chs/">4. 介绍GitHub Copilot</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../04-Using-GitHub-Copilot-with-JavaScript/README_chs/">5. 使用 GitHub Copilot 与 JavaScript</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../05-Using-GitHub-Copilot-with-Python/README_chs/">6. 使用GitHub Copilot与Python</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../06-Using-GitHub-Copilot-with-CSharp/README_chs/">7. 使用 GitHub Copilot 和 C#</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../07-Creating-Mini-Game-with-GitHub-Copilot/README_chs/">8. 使用 GitHub Copilot 创建迷你游戏</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../08-Using-Advanced-GitHub-Copilot-Features/README_chs/">9. 使用 GitHub Copilot 高级功能</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mastering-GitHub-Copilot-for-Paired-Programming</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">3. GitHub Codespaces简介</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <header>
+
+# GitHub Codespaces简介
+
+欢迎来到 GitHub Codespaces 的精彩世界，这是您基于云的编码资源。在这个模块中，我们将深入了解即时的、基于云的开发环境，革新您对编码的看法。GitHub Codespaces 提供了无缝集成的体验，提供了一个配备了开发所需的基本语言、工具和实用程序的容器。
+
+在整个学习过程中，我们将探索 Codespaces 的生命周期和过程。发现根据您的独特偏好和需求定制您的 Codespace 设置的力量。为了巩固您的理解，我们将在模块结束时进行一个动手练习，允许您在 GitHub Codespaces 环境中展示您的编码才能。
+
+想象一下，一个完全配置的开发环境触手可及，可以从任何有互联网连接的计算机访问。GitHub Codespaces 为协作和灵活的编码打开了大门。让我们深入探索，解锁 GitHub Codespaces 基于云开发的全部潜力！
+
+</header>
+
+<ul>
+<li><strong>适用于</strong>: 开发人员、DevOps 工程师、工程经理、产品经理。</li>
+<li><strong>您将学到</strong>: 如何创建 codespace，从 codespace 推送代码，选择自定义镜像，以及自定义 codespace。</li>
+<li><strong>您将构建</strong>: 一个带有 devcontainer.json 文件、自定义和个性化设置的 codespace。</li>
+<li><strong>先决条件</strong>: 您需要了解以下内容:</li>
+<li>使用 Visual Studio Code，<a href="https://code.visualstudio.com/docs">Visual Studio Code 文档</a>。</li>
+<li>了解 GitHub 的使用或完成上一模块 <a href="https://github.com/WirelessLife/Mastering-GitHub-Copilot-for-Paired-Programming/blob/main/01-Introduction-to-GitHub/README.md?WT.mc_id=academic-113596-abartolo">GitHub 简介</a>。</li>
+<li><strong>时间</strong>: 本课程可以在一小时内完成。</li>
+</ul>
+<p>在本模块结束时，您将能够:</p>
+<ol>
+<li>描述 GitHub Codespaces。</li>
+<li>解释 GitHub Codespace 的生命周期以及如何执行每个步骤。</li>
+<li>定义可以用 GitHub Codespaces 个性化的不同自定义内容。</li>
+</ol>
+<h2 id="_1">预备阅读:</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/training/modules/code-with-github-codespaces/?WT.mc_id=academic-113596-abartolo">使用 GitHub Codespaces 进行编码</a></li>
+<li>什么是 GitHub Codespaces? (下面的视频播放列表)</li>
+<li><a href="https://www.youtube.com/watch?v=ozuDPmcC1io&amp;list=PLmsFUfdnGr3wTl-NCblzcrEv2lFSX975-"><img alt="什么是 Codespaces" src="https://img.youtube.com/vi/ozuDPmcC1io/0.jpg" /></a></li>
+</ul>
+<h3 id="_2">如何开始本课程</h3>
+<!-- For start course, run in JavaScript:
+'https://github.com/new?' + new URLSearchParams({
+  template_owner: 'skills',
+  template_name: 'code-with-codespaces',
+  owner: '@me',
+  name: 'skills-code-with-codespaces',
+  description: 'My clone repository',
+  visibility: 'public',
+}).toString()
+-->
+
+<p><a href="https://github.com/new?template_owner=skills&amp;template_name=code-with-codespaces&amp;owner=%40me&amp;name=skills-code-with-codespaces&amp;description=My+clone+repository&amp;visibility=public"><img alt="start-course" src="https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg" /></a></p>
+<ol>
+<li>右键点击 <strong>开始课程</strong> 并在新标签页中打开链接。</li>
+<li>在新标签页中，大部分提示将自动为您填写。</li>
+<li>对于所有者，选择您的个人账户或托管仓库的组织。</li>
+<li>我们建议创建一个公共仓库，因为私有仓库将<a href="https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions?WT.mc_id=academic-113596-abartolo">使用 Actions 分钟</a>。</li>
+<li>向下滚动并点击表单底部的 <strong>创建仓库</strong> 按钮。</li>
+<li>创建新仓库后，等待约20秒，然后刷新页面。按照新仓库中 README 的分步说明进行操作。</li>
+</ol>
+<footer>
+
+<!--
+  <<< 作者提示: 页脚 >>>
+  添加支持链接，GitHub 状态页面，行为守则，许可链接。
+-->
+
+---
+
+获取帮助: [在我们的讨论板上发帖](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [查看 GitHub 状态页面](https://www.githubstatus.com/)
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../01-Introduction-to-GitHub/README_chs/" class="btn btn-neutral float-left" title="2. GitHub简介"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../03-Introduction-to-GitHub-Copilot/README_chs/" class="btn btn-neutral float-right" title="4. 介绍GitHub Copilot">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../01-Introduction-to-GitHub/README_chs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../03-Introduction-to-GitHub-Copilot/README_chs/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>9. 使用 GitHub Copilot 高级功能 - Mastering-GitHub-Copilot-for-Paired-Programming</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "9. \u4f7f\u7528 GitHub Copilot \u9ad8\u7ea7\u529f\u80fd";
+        var mkdocs_page_input_path = "08-Using-Advanced-GitHub-Copilot-Features/README_chs.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mastering-GitHub-Copilot-for-Paired-Programming
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../README_chs/">1. 掌握 GitHub Copilot 用于 AI 配对编程</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../01-Introduction-to-GitHub/README_chs/">2. GitHub简介</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../02-Introduction-to-GitHub-Codespaces/README_chs/">3. GitHub Codespaces简介</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../03-Introduction-to-GitHub-Copilot/README_chs/">4. 介绍GitHub Copilot</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../04-Using-GitHub-Copilot-with-JavaScript/README_chs/">5. 使用 GitHub Copilot 与 JavaScript</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../05-Using-GitHub-Copilot-with-Python/README_chs/">6. 使用GitHub Copilot与Python</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../06-Using-GitHub-Copilot-with-CSharp/README_chs/">7. 使用 GitHub Copilot 和 C#</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../07-Creating-Mini-Game-with-GitHub-Copilot/README_chs/">8. 使用 GitHub Copilot 创建迷你游戏</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">9. 使用 GitHub Copilot 高级功能</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mastering-GitHub-Copilot-for-Paired-Programming</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">9. 使用 GitHub Copilot 高级功能</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <header>
+
+# 使用 GitHub Copilot 高级功能
+
+GitHub Copilot 不仅仅是代码建议。作为一名软件工程师，你经常会试图理解现有代码，并通过文档、测试和自动化来增强它。
+
+在本模块中，你将使用 GitHub Copilot 的高级功能，这些功能将允许你与代码进行互动，并有效地应用建议和知识。
+
+你将使用基于 Python 的现有 HTTP API 进行更改、修复错误、编写文档和测试你将实现的新端点。
+
+</header>
+
+<ul>
+<li><strong>适合人群</strong>: 开发人员，DevOps 工程师，软件开发经理，测试人员。</li>
+<li><strong>你将学到</strong>: 使用 GitHub Copilot 的高级功能进行测试、文档编写和代码工作。</li>
+<li><strong>你将构建</strong>: 新的 HTTP API 路由，以及文档和测试以验证其正确性。</li>
+<li><strong>前提条件</strong>: 要使用 GitHub Copilot，你必须拥有一个有效的 GitHub Copilot 订阅。注册获取30天免费 <a href="https://github.com/settings/copilot">Copilot</a>。</li>
+<li><strong>时间</strong>: 本模块可以在一小时内完成。</li>
+</ul>
+<p>在本模块结束时，你将掌握以下技能:</p>
+<ul>
+<li>使用 GitHub Copilot 的高级功能，如内联聊天、斜杠命令和代理。</li>
+<li>与 GitHub Copilot 互动，深入了解你的项目并对其提问。</li>
+</ul>
+<h2 id="_1">必读内容:</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/training/modules/introduction-prompt-engineering-with-github-copilot//?WT.mc_id=academic-113596-abartolo">GitHub Copilot 提示工程介绍</a></li>
+<li><a href="https://learn.microsoft.com/training/modules/advanced-github-copilot/?WT.mc_id=academic-113596-abartolo">使用 GitHub Copilot 的高级功能</a></li>
+</ul>
+<h2 id="_2">要求</h2>
+<ol>
+<li>启用你的 <a href="https://github.com/github-copilot/signup">GitHub Copilot 服务</a></li>
+<li>使用 Codespaces 打开 <a href="https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot">此库</a></li>
+</ol>
+<h2 id="_3">💪🏽 练习</h2>
+<p><strong>右键单击以下 Codespaces 按钮以在新标签中打开你的 Codespace</strong></p>
+<p><a href="https://codespaces.new/MicrosoftDocs/mslearn-copilot-codespaces-python"><img alt="在 GitHub Codespaces 中打开" src="https://github.com/codespaces/badge.svg" /></a></p>
+<p>当前的 API 未公开 country/{country}，需要实现以列出城市。该路由应仅允许 GET HTTP 请求，并使用 JSON 响应提供该国家、城市和给定月份的历史高低数据。</p>
+<p>与任何实现一样，此添加应该包括至少一个测试函数，以与 pytest 运行器和测试框架一起使用。</p>
+<h3 id="_4">🛠 第一步: 添加新路由</h3>
+<p>在我们的第一个练习中，我们将在 API 中创建一个新路由。转到 main.py 文件，并使用 <code>ctrl</code> + <code>i</code>（在 Windows 上）或 <code>cmd</code> + <code>i</code>（在 Mac 上）的内联聊天，要求 GitHub Copilot 帮助你创建一个显示国家城市的新 API。</p>
+<p>在内联聊天中使用以下提示:</p>
+<pre><code>创建一个公开国家城市的新路由。
+</code></pre>
+<p>这个提示应该为你提供类似如下的内容:</p>
+<pre><code class="language-python"># 创建一个公开国家城市的新路由:
+@app.get('/countries/{country}')
+def cities(country: str):
+    return list(data[country].keys())
+</code></pre>
+<blockquote>
+<p>[!注意]
+试用你新的路由并调整你的提示，直到结果符合预期。</p>
+</blockquote>
+<h3 id="_5">🔎 第二步: 创建测试</h3>
+<p>现在，你已经创建了一个新路由，让我们使用 Copilot Chat 为此路由创建一个测试，使用西班牙作为国家。记得选择你的代码，并要求 Copilot Chat 帮助你创建我们刚刚创建的这个特定 API 的测试。</p>
+<p>使用以下提示与 GitHub Copilot Chat 进行互动:</p>
+<pre><code>/tests 帮我为这个路由创建一个新的测试，使用西班牙作为国家。
+</code></pre>
+<p><img alt="Copilot Chat 图像示例" src="https://raw.githubusercontent.com/MicrosoftDocs/mslearn-advanced-copilot/main/images/ideascopilot.png" /></p>
+<p>一旦 Copilot 帮助你创建了测试，请测试它。如果它不像预期的那样工作，请随时在聊天中与 Copilot 分享这些细节。例如:</p>
+<pre><code>这个测试不太对，它没有包括不存在的城市。只有塞维利亚是 API 的一部分。
+</code></pre>
+<p>它应该给你另一个解决方案。继续尝试，直到达到预期的结果。</p>
+<h3 id="_6">🐍 第三步: 使用代理编写项目</h3>
+<p>在此步骤中，我们将使用代理（工作区）来编写有关如何运行此项目的项目文档。在 GitHub Copilot Chat 中，我们将尝试以下提示:</p>
+<p><code>&gt; @workspace 帮我使用代理编写有关如何运行此项目的项目文档。</code></p>
+<p>最后，通过访问 <code>/docs</code> 端点并确认该端点显示，以验证新端点是否正常工作。</p>
+<h3 id="_7">💡 第四步: 使用斜杠命令</h3>
+<p>现在你已经使用 GitHub Copilot 生成并解释了代码，你还可以探索一些其他替代方法来执行开发人员任务。这些额外的挑战将帮助你深入了解除了你已经知道的功能以外的其他 GitHub Copilot 功能。对于这些额外的挑战，你将使用聊天界面。如果尚未打开，请单击左侧边栏中的 GitHub Copilot Chat 图标。</p>
+<p>🚀 恭喜你，通过练习，你已经使用了许多不同的 GitHub Copilot 功能，使你能够更好地处理不同的项目。你互动地使用了一些功能来编写测试、文档，并了解现有代码的更多信息。</p>
+<h2 id="_8">法律声明</h2>
+<p>Microsoft 和任何贡献者授予你对本存储库中 Microsoft 文档和其他内容的使用权，依照 <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International Public License</a>，详见 <a href="LICENSE">LICENSE</a> 文件，并授予你对存储库中的任何代码的使用权，依照 <a href="https://opensource.org/licenses/MIT">MIT License</a>，详见 <a href="LICENSE-CODE">LICENSE-CODE</a> 文件。</p>
+<p>Microsoft、Windows、Microsoft Azure 和/或文档中提到的其他 Microsoft 产品和服务可能是美国和/或其他国家的 Microsoft 商标或注册商标。
+本项目的许可不授予你使用任何 Microsoft 名称、标志或商标的权利。
+Microsoft 的一般商标指南可以在 http://go.microsoft.com/fwlink/?LinkID=254653 中找到。</p>
+<p>隐私信息请访问 https://privacy.microsoft.com/zh-cn/</p>
+<p>Microsoft 和任何贡献者保留所有其他权利，无论是根据各自的版权、专利或商标，以及通过默示、禁止反言或其他方式。</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../07-Creating-Mini-Game-with-GitHub-Copilot/README_chs/" class="btn btn-neutral float-left" title="8. 使用 GitHub Copilot 创建迷你游戏"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../07-Creating-Mini-Game-with-GitHub-Copilot/README_chs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
