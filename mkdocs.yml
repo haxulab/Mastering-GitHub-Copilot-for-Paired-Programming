@@ -1,0 +1,20 @@
+site_name: Mastering-GitHub-Copilot-for-Paired-Programming
+docs_dir: .
+site_dir: ../site
+
+nav:
+  - 1. 掌握 GitHub Copilot 用于 AI 配对编程: README_chs.md
+  - 2. GitHub简介: 01-Introduction-to-GitHub/README_chs.md
+  - 3. GitHub Codespaces简介: 02-Introduction-to-GitHub-Codespaces/README_chs.md
+  - 4. 介绍GitHub Copilot: 03-Introduction-to-GitHub-Copilot/README_chs.md
+  - 5. 使用 GitHub Copilot 与 JavaScript: 04-Using-GitHub-Copilot-with-JavaScript/README_chs.md
+  - 6. 使用GitHub Copilot与Python: 05-Using-GitHub-Copilot-with-Python/README_chs.md
+  - 7. 使用 GitHub Copilot 和 C#: 06-Using-GitHub-Copilot-with-CSharp/README_chs.md
+  - 8. 使用 GitHub Copilot 创建迷你游戏: 07-Creating-Mini-Game-with-GitHub-Copilot/README_chs.md
+  - 9. 使用 GitHub Copilot 高级功能: 08-Using-Advanced-GitHub-Copilot-Features/README_chs.md
+
+plugins:
+  - search
+  - same-dir
+
+theme: readthedocs
